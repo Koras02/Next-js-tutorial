@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Link from 'next/link'; // link 요소 추가하기
 
 export default function Home() {
   return (
@@ -7,12 +8,15 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main>
+        {/* 링크 요소 추가하기 */}
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Read{ ' ' }
+          <Link href="/posts/first-post">
+            <a>this page!</a>
+          </Link>
         </h1>
-
+        {/* 링크 요소 end */}
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
