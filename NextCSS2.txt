@@ -1,0 +1,15 @@
+먼저 Next.js가 이미지와 같은 정적 자산을 처리하는 방법에 대해 설명해 보겠다.
+
+Next.js는 최상위 `public`디렉토리 아래에 이미지와 같은 정적파일을 제공한다.내부 파일은
+
+`public`과 유사한 응용프로그램 루트에서 참조 가능 
+
+`pages/index.js`를 열고 살펴보면 `<footer>`와 같이 로고 이미지를 참조한다.
+
+
+ <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
+
+ 로고 이미지는 `public` 애플리케이션의 최상위 디렉토리에 있다.
+
+이 `public`디렉토리는 `roborts.txt`,Google사이트 확인 및 기타 정적 자산에도 유용하다.
+
